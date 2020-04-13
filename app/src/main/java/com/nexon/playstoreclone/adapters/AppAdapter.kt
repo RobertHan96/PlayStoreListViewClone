@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.TextView
 import com.nexon.playstoreclone.R
 import com.nexon.playstoreclone.datas.App
+import kotlinx.android.synthetic.main.app_list_item.view.*
 
 class AppAdapter (context: Context, resID : Int, list: ArrayList<App>) : ArrayAdapter<App>(context, resID, list) {
     val mContext = context
@@ -26,7 +27,19 @@ class AppAdapter (context: Context, resID : Int, list: ArrayList<App>) : ArrayAd
 //    위에서 이미 null 체크가 끝났으므로 내가 가져올 리스트 아이템은 !!를 사용해 강제 언랩핑해서 사용 준비
         val row = tempRow!!
 
-
+//        val nameText = row.findViewById<TextView>(R.id.titleText)
+//        val companyNameText = row.findViewById<TextView>(R.id.companyText)
+//        val starOneImg = row.findViewById<TextView>(R.id.starOneImg)
+//        val starTwoImg = row.findViewById<TextView>(R.id.starTwoImg)
+//        val starThreeImg = row.findViewById<TextView>(R.id.starThreeImg)
+//        val starFourImg = row.findViewById<TextView>(R.id.starFourImg)
+//        val starFiveImg = row.findViewById<TextView>(R.id.starFiveImg)
+//
+//        val data = mList.get(position)
+//
+//
+//        nameText.text = data.title
+//        companyNameText.text = data.company
 
         return  row
     }
